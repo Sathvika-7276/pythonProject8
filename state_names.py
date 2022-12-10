@@ -17,9 +17,8 @@ for i in CODE_TO_NAME:
             sentence = f"{state_code} is {CODE_TO_NAME[state_code]}"
             print(sentence)
             all_sentences += sentence + "\n"
-            state_code = input("Enter short state: ").upper()
         except KeyError:
             print("Invalid")
-            state_code = input("Enter short state: ").upper()
+        state_code = input("Enter short state: ").upper()
 
 print(all_sentences)
