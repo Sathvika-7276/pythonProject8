@@ -12,8 +12,8 @@ INDEX_CHAMPION = 2
 def main():
     """Read data file and print corresponding details"""
     records = get_records(FILENAME)
-    champion_to_count, countries = process_records(records)
-    display_results(champion_to_count, countries)
+    champion_count, countries = process_records(records)
+    display_results(champion_count, countries)
 
 
 def process_records(records):
