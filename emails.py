@@ -6,6 +6,7 @@ Actual:   40 minutes
 
 
 def main():
+    """ Program to get names from email ID and display from a dictionary """
     dictionary = {}
     email = input("Email:")
     while email != "":
@@ -21,6 +22,7 @@ def main():
 
 
 def extract_name(email):
+    """ Extracting names from the email ID input """
     separate = email.split("@")[0]
     split = separate.split(".")
     user_name = " ".join(split).title()
